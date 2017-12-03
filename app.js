@@ -26,7 +26,7 @@ app.get("/posts", function(request, response){
         {titulo: "My mascota adorable", autor: "Morco"},
         {titulo: "Puedes ver este puerquitooo", autor: "alguienXD"},
     ];
-
+    
     // Definimos el rendereado de la pagina con ejs y las variables a pasars
     response.render("posts.ejs", {
         posteos: posts

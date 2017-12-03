@@ -1,5 +1,7 @@
 <h1>La Pagina de los Posts XD</h1>
 <%= posteos %>
+
+<!-- Codigo para que se muestren los posts con el escape de simbolos % y %= -->
 <% for (var i = 0 ; i < posteos.length; i++ ) {  %>
-    <li>Aqui va un Post</li>
-<% } %>
+    <li> <%= posteos[i].titulo %> - <%= posteos[i].autor %></li>
+<% } %> 
